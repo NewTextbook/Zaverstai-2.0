@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local("Geometria-Regular"),
+    url("./fonts/Geometria.woff2") format("woff2"),
+    url("./fonts/Geometria.woff") format("woff");
+}
+
+/* Жирный шрифт*/
+@font-face {
+  font-family: "Geometria-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Geometria-Medium"),
+    url("./fonts/Geometria-Medium.woff2") format("woff2"),
+    url("./fonts/Geometria-Medium.woff") format("woff");
+}
+
+/*Декоративный шрифт*/
+@font-face {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local("Caveat-Regular"),
+    url("./fonts/caveat-400-normal.woff2") format("woff2"),
+    url("./fonts/caveat-400-normal.woff") format("woff");
+}
+
+/*Общие стили*/
+body {
+  /* Блочная модель */
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+
+  /* Типографика */
+  font-family: "Geometria", Arial, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 15px;
+  font-weight: normal;
+  color: rgba(174, 124, 120, 1);
+}
+
+img {
+  /* Блочная модель */
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  /* Типографика */
+  color: rgba(139, 126, 172, 1);
+
+  text-decoration: none;
+}
+
+a:hover {
+  /* Типографика */
+  color: rgba(139, 126, 172, 0.6);
+}
+
+a:focus {
+  /* Типографика */
+  color: rgba(139, 126, 172, 0.4);
+}
+
+/*Общий класс для скрытия заголовков*/
+.visually-hidden:not(:focus):not(:active) {
+  /* Блочная модель */
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
